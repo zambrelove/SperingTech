@@ -1,12 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spering Tech</title>
+    <link rel="shortcut icon" href="Assets/Images/favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Slick slider link -->
+    <link rel="stylesheet" href="/Assets/SlickSlider/slick-min.css"/>
+    <link rel="stylesheet" href="/Assets/SlickSlider/slick-theme-min.css"/>
+    
+    <!-- Fontawsome link -->
+    <link rel="stylesheet" href="Assets/fontawesome-free-6.2.1-web/css/all.min.css">
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/Assets/style.css">
 </head>
 <body>
-    <h1>Wellcome</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat hic maiores optio quisquam rem minus.</p>
+<!-- ================================ ***** Spering Tech WebPage Layout Start Here ***** =============================== -->
+
+    <!-- Hero Section Start Here -->
+        <header>
+            <nav>
+                <div class="Logo d-flex">
+                    <a href="#"> 
+                        <img src="/Assets/Images/logo.png" alt="Brand logo" />
+                    </a>
+
+                    <div class="Desktop-link">
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">work</a></li>
+                            <li><a href="#">category</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="TopRight-Nav">
+                    <ul class="d-flex">
+                        <li><a href="#">login</a></li>
+                        <li>
+                            <i class="fas fa-magnifying-glass"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-bars-staggered" onclick="OpenSidebar()"></i>
+
+                            <div class="Sidebar">
+                                <div class="Sidebar-Pannel" id="Sidebar">
+                                    <i class="fas fa-xmark" onclick="CloseSidebar()"></i>
+                                    <ul>
+                                        <li><a href="#">home</a></li>
+                                        <li><a href="#">about</a></li>
+                                        <li><a href="#">work</a></li>
+                                        <li><a href="#">category</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="Container Hero-Slider">
+                <div class="Hero_Slide">
+                    <div class="Slide-Content">
+                        <h1 class="Slide-tittle">you can <br class="Slide-tittle-brak"> hire freelancer <br class="Slide-tittle-brak"> here</h1>
+                        <p class="Slide-Discription">It is a long established fact that a reader will be distracted by <br class="Slide-tittle-brak"> the readable content of a page</p>
+
+                        <a href="#" class="Btn Theme-Btn">about us</a>
+                        <a href="#" class="Btn">get a qoute</a>
+                    </div>
+
+                    <div class="Slide-img">
+                        <img src="Assets/Images/hero-slide.png" alt="Slider image" />
+                    </div>
+                </div>
+
+                <div class="Hero_Slide">
+                    <div class="Slide-Content">
+                        <h1 class="Slide-tittle">you can <br class="Slide-tittle-brak"> hire freelancer <br class="Slide-tittle-brak"> here</h1>
+                        <p class="Slide-Discription">It is a long established fact that a reader will be distracted by <br class="Slide-tittle-brak"> the readable content of a page</p>
+
+                        <a href="#" class="Btn Theme-Btn">about us</a>
+                        <a href="#" class="Btn">get a qoute</a>
+                    </div>
+
+                    <div class="Slide-img">
+                        <img src="Assets/Images/hero-slide.png" alt="Slider image" />
+                    </div>
+                </div>
+
+                <div class="Hero_Slide">
+                    <div class="Slide-Content">
+                        <h1 class="Slide-tittle">you can <br class="Slide-tittle-brak"> hire freelancer <br class="Slide-tittle-brak"> here</h1>
+                        <p class="Slide-Discription">It is a long established fact that a reader will be distracted by <br class="Slide-tittle-brak"> the readable content of a page</p>
+
+                        <a href="#" class="Btn Theme-Btn">about us</a>
+                        <a href="#" class="Btn">get a qoute</a>
+                    </div>
+
+                    <div class="Slide-img">
+                        <img src="Assets/Images/hero-slide.png" alt="Slider image" />
+                    </div>
+                </div>
+
+                <div class="Hero_Slide">
+                    <div class="Slide-Content">
+                        <h1 class="Slide-tittle">you can <br class="Slide-tittle-brak"> hire freelancer <br class="Slide-tittle-brak"> here</h1>
+                        <p class="Slide-Discription">It is a long established fact that a reader will be distracted by <br class="Slide-tittle-brak"> the readable content of a page</p>
+
+                        <a href="#" class="Btn Theme-Btn">about us</a>
+                        <a href="#" class="Btn">get a qoute</a>
+                    </div>
+
+                    <div class="Slide-img">
+                        <img src="Assets/Images/hero-slide.png" alt="Slider image" />
+                    </div>
+                </div>
+            </div>
+        </header>
+    <!-- Hero Section End Here -->
+
+    <!-- Jumbotron Start Here -->
+        <div class="Container Jumbotron">
+            <div class="Jumbotron-image">
+                <img src="Assets/Images/experience.png" alt="Experinced images" />
+            </div>
+            <div class="Jumbotron-Content">
+                <h2 class="Section-Tittle">Best Experinced Freelancer Here</h2>
+                <p class="Jumbotron-Discription">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters as.</p>
+                <a href="#" class="Btn Theme-Btn">read more</a>
+                <a href="#" class="Btn hire">hire</a>
+            </div>
+        </div>
+    <!-- Jumbotron End Here -->
+
+    <!-- Category Start Here -->
+        <div class="Category">
+            <div class="Container Category-Outter">
+                <h2 class="Section-Tittle">category</h2>
+
+                <div class="Category-Wrapper">
+                    <div class="Category-item">
+                        <i class="fa-solid fa-icons icon"></i>
+                        <h3 class="Category-tittle">design <br class="Cate-tittle-Break">& arts</h3>
+                    </div>
+                    <div class="Category-item">
+                        <i class="fas fa-laptop-code icon"></i>
+                        <h3 class="Category-tittle">web<br class="Cate-tittle-Break"> development</h3>
+                    </div>
+                    <div class="Category-item">
+                        <i class="fas fa-laptop icon"></i>
+                        <h3 class="Category-tittle">seo<br class="Cate-tittle-Break"> marketing</h3>
+                    </div>
+                    <div class="Category-item">
+                        <i class="fas fa-video icon"></i>
+                        <h3 class="Category-tittle">video<br class="Cate-tittle-Break"> editing</h3>
+                    </div>
+                    <div class="Category-item">
+                        <i class="fas fa-pen-ruler icon"></i>
+                        <h3 class="Category-tittle">logo<br class="Cate-tittle-Break"> design</h3>
+                    </div>
+                    <div class="Category-item">
+                        <i class="fas fa-gamepad icon"></i>
+                        <h3 class="Category-tittle">game<br class="Cate-tittle-Break"> design</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Category End Here -->
+
+    <!-- About Section Start Here -->
+        <div class="Container About">
+            <div class="About-Banner">
+                <img src="/Assets/Images/about.png" alt="About Banner" />
+            </div>
+            <div class="About-Content">
+                <h2 class="Section-Tittle">about spering company</h2>
+                <p class="About-Discription">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If youThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you</p>
+                <a href="#" class="Btn Theme-Btn">read more</a>
+            </div>
+        </div>
+    <!-- About Section End Here -->
+
+
+    <!-- Work Section Start Here -->
+        <div class="Work Container">
+            <div class="Work-Content">
+                <h3 class="Section-Tittle">work freelancer has done</h3>
+
+                <div class="Work-Card-Wrapper">
+                    <div class="Work-Card">
+                        <div class="Work-Card-icon-outer">
+                            <img src="/Assets/Images/Work/work-card-icon-1.png" alt="icon" />
+                        </div>
+                        <div class="Work-Card-Content">
+                            <p class="Theme-Text">$250 Million</p>
+                            <h3 class="Work-Card-Tittle">paid to freelancer</h3>
+                        </div>
+                    </div>
+
+                    <div class="Work-Card">
+                        <div class="Work-Card-icon-outer">
+                            <img src="/Assets/Images/Work/work-card-icon-2.png" alt="icon" />
+                        </div>
+                        <div class="Work-Card-Content">
+                            <p class="Theme-Text">$2 Million</p>
+                            <h3 class="Work-Card-Tittle">paid invoices</h3>
+                        </div>
+                    </div>
+
+                    <div class="Work-Card">
+                        <div class="Work-Card-icon-outer">
+                            <img src="/Assets/Images/Work/work-card-icon-3.png" alt="icon" />
+                        </div>
+                        <div class="Work-Card-Content">
+                            <p class="Theme-Text">700,000</p>
+                            <h3 class="Work-Card-Tittle">worldwide freelancer</h3>
+                        </div>
+                    </div>
+
+                    <div class="Work-Card">
+                        <div class="Work-Card-icon-outer">
+                            <img src="/Assets/Images/Work/work-card-icon-2.png" alt="icon" />
+                        </div>
+                        <div class="Work-Card-Content">
+                            <p class="Theme-Text">98%</p>
+                            <h3 class="Work-Card-Tittle">customer Satisfaction rate</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Work-Banner">
+                <img src="/Assets/Images/work.png" alt="Work Banner" />
+            </div>
+        </div>
+    <!-- Work Section End Here -->
+
+    <!-- Testimonial Start Here -->
+        <div class="Container Testimonial">
+            <h2 class="Section-Tittle">testimonial</h2>
+
+            <div class="Testimonial-Sldier">
+                <div class="Testimonial-Slide">
+                    <h3 class="Work-Card-Tittle">John Hissona</h3>
+                    <p class="Testimonial-Slide-Discription">passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If youThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in s</p>
+                </div>
+            </div>
+        </div>
+    <!-- Testimonial End Here -->
+
+
+    <!-- Footer -->
+        <footer>
+            <div class="Container">
+                <div class="Footer-nav">
+                    <div class="Footer-logo">
+                        <a href="index.html" title="Footer link">
+                            <img src="Assets/Images/logo.png" alt="Footer Logo" class="Footer-logo"/>
+                        </a>
+                    </div>
+                    <ul class="Footer-Social-Media">
+                        <li><a href="#"><i class="fas fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fas fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fas fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fas fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fas fa-youtube-square"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="Footer-Links-Wrapper">
+                    <div class="Useful-link">
+                        <h4 class="Footer-tittle">Useful link</h4>
+                        <ul>
+                            <li><a href="#">home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">work</a></li>
+                            <li><a href="#">category</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="offices">
+                        <h4 class="Footer-tittle">offices</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nesciunt nisi iure, voluptate deserunt earum natus expedita magni debitis cupiditate!</p>
+                    </div>
+                    
+                    <div class="information">
+                        <h4 class="Footer-tittle">information</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nesciunt nisi iure, voluptate deserunt earum natus expedita magni debitis cupiditate!</p>
+                    </div>
+
+                    <div class="newsletter">
+                        <h4 class="Footer-tittle">newsletter</h4>
+
+                        <form action="" method="post">
+                            <input type="email" placeholder="email" required/>
+                            <button type="submit" class="Btn Theme-Btn">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="Container other-link">
+                <ul>
+                    <li><a href="#"> <i class="fas fa-location"> </i> location</a></li>
+                    <li><a href="#"> <i class="fas fa-message"></i> demo@gmail.com</a></li>
+                    <li><a href="#"> <i class="fas fa-phone"></i> call +1234567890</a></li>
+                </ul>
+            </div>
+
+            <div class="Copywrite">
+                <p>© 2020 All Rights Reserved. <br class="copyright-break"> Design by Free Html Templates</p>
+            </div>
+        </footer>
+    <!-- Footer -->
+
+
+
+
+    <!-- All External Script Tag's & Script src file -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        
+        <script>
+            $('.Hero-Slider').slick({
+                dots: false,
+                infinite: true,
+                autoplay: true,
+                arrows: true,
+                draggable: true,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                });
+        </script>
+
+        <script src="/Assets/fontawesome-free-6.2.1-web/js/all.min.js"></script>
+        <script src="Assets/main.js"></script>
+    <!-- All External Script Tag's & Script src file -->
+<!-- ================================ ***** Spering Tech WebPage Layout End Here ***** ================================= -->
 </body>
 </html>

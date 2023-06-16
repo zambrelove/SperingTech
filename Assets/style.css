@@ -1,0 +1,633 @@
+/****** ================================ ***** Spring Template Css File Start Here ***** =============================== ******/
+
+/* ============================ ***** Globle Css Start Here ***** ================================= */
+    
+    /* --- Color Palette Declartion Start Here --- */
+        :root{
+            --Theme-Primery-color: #192d35;
+            --Theme-Secondry-color: #1cbbb4;
+            --Btn_BG: #ff4f5a;
+            --Decription-Text: #1a2e35;
+            --Section-Title: #1d1c1c;
+            --Footer-sub-content: #c9c7c7;
+            --White: #ffffff;
+            --Black: #000000;
+        }
+    /* --- Color Palette Declartion End Here --- */
+
+    /* --- Typographic Declation Start Here --- */
+        @font-face {
+            font-family: 'Poppins-Regular';
+            src: url('/Assets/Fonts/Poppins/Poppins-Regular.ttf');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'Poppins-Bold';
+            src: url('/Assets/Fonts/Poppins/Poppins-Bold.ttf');
+            font-weight: 700;
+        }
+    /* --- Typographic Declation End Here --- */
+
+    /* --- Comman Css Start Here --- */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            border: 0px;
+            outline: 0px transparent;
+            transition: all 0.2s;
+        }
+
+        html, body {
+            font-size: 14px;
+            font-family: 'Poppins-Regular';
+            scroll-behavior: smooth;
+        }
+        ::selection{
+            color: var(--White);
+            background-color: var(--Theme-Secondry-color);
+        }
+
+        a {
+            color: var(--Black);
+            display: inline;
+        }
+
+        .Container {
+            width: 90vw;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+
+        .d-flex {
+            display: flex;
+        }
+
+        .Btn {
+            font-size: 14px;
+            padding: 5px 20px;
+            margin-right: 10px;
+            display: inline-block;
+            color: var(--Theme-Primery-color);
+            background-color: var(--White);
+            text-transform: capitalize;
+        }
+        .Btn:hover {
+            background-color: var(--Theme-Secondry-color);
+        }
+        .Theme-Btn {
+            color: var(--White);
+            background-color: var(--Btn_BG);
+            cursor: pointer;
+        }
+        .Theme-Btn:hover {
+            color: var(--White);
+            background-color: var(--Theme-Secondry-color);
+        }
+        .hire {
+            color: var(--White);
+            background-color: var(--Theme-Primery-color);
+            padding: 5px 40px;
+            margin-right: 0;
+        }
+        .hire:hover {
+            color: var(--White);
+            background-color: var(--Theme-Secondry-color);
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .Section-Tittle {
+            font-size: 28px;
+            font-family: 'Poppins-Bold';
+            color: var(--Decription-Text);
+            text-transform: uppercase;
+        }
+    /* --- Comman Css End Here --- */
+    
+/* ============================ ***** Globle Css End Here ***** ================================= */
+
+
+/* Page Layout Section's Css Start Here  */
+        
+    /* -- Hero Section Start Here --- */
+        header {
+            min-height: 100vh;
+            background: url('/Assets/Images/herobg.png');
+            background-position: left center;
+            position: relative;
+            overflow: hidden;
+            background-attachment: fixed;
+        }
+        nav {
+            display: flex;
+            align-items: top;
+            justify-content: space-between;
+            padding: 20px 15px;
+        }
+        .Logo img {
+            width: 60%; height: auto;
+        }
+        .Desktop-link {
+            display: none;
+        }
+        .Desktop-link ul, .TopRight-Nav ul{
+            gap: 15px;
+            padding-top: 5px;
+        }
+        .TopRight-Nav ul li a{
+            text-transform: uppercase;
+        }
+        .Sidebar-Pannel {
+            position: absolute; top: 0; right: -110%;
+            width: 100vw; height: 100%;
+            background-color: var(--Theme-Secondry-color);
+            display: flex; align-items: center; justify-content: center;
+            z-index: 999;
+        }
+        .Sidebar-Pannel ul li {
+            margin-bottom: 15px;
+        }
+        .Sidebar-Pannel ul li a {
+            font-size: 24px;
+        }
+        .Desktop-link ul li a:hover {
+            color: var(--Theme-Secondry-color);
+        }
+        .Active-Sidebar {
+            right: 0;
+        }
+        .fa-xmark {
+            font-size: 18px;
+            position: absolute;
+            top: 27px; right: 17px; 
+        }
+        .fa-magnifying-glass:hover, .fa-bars-staggered:hover, .Sidebar-Pannel ul li a:hover {
+            color: var(--Theme-Primery-color);
+        }
+        .Desktop-link ul a, .TopRight-Nav ul a, .Sidebar-Pannel ul li a, .fa-magnifying-glass, .fa-bars-staggered, .fa-xmark, .Useful-link li a {
+            color: var(--White);
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+        
+        
+        /* Slider */
+        .Hero-Slider {
+            height: 100%;
+            padding-left: 0; padding-right: 0;
+            z-index: 9999;
+        }
+        .Slide-tittle {
+            font-size: 32px;
+            color: var(--White);
+            font-family: 'Poppins-Bold';
+            text-transform: uppercase;
+        }
+        .Slide-Discription {
+            font-family: 'Poppins-Regular';
+            color: var(--White);
+            margin: 15px 0;
+        }
+        .Slide-Content .Theme-Btn {
+            margin-right: 10px;
+        }
+        .slick-slide img {
+            display: inline-block;
+            width: 100%;
+        }
+        .Slide-img {
+            margin-top: 50px;
+        }
+        .Slide-tittle-brak {
+            display: none;
+        }
+        .slick-next {
+            right: 91%;
+            top: 105%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--Theme-Secondry-color);
+        }
+        .slick-next:hover{
+            background-color: var(--Btn_BG);
+        }
+        .slick-prev {
+            position: absolute;
+            left: 0px;
+            top: 105%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--Btn_BG);
+            z-index: 9999;
+        }
+        .slick-prev:hover{
+            background-color: var(--Theme-Secondry-color);
+        }
+        /* Slider End */
+        
+    /* -- Hero Section End Here --- */
+
+    /* --- Jumbotron --- */
+        
+        .Jumbotron {
+            background-color: var(--White);
+            padding: 80px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;background-attachment: fixed;
+        }
+        .Jumbotron-Discription {
+            margin: 10px 0px 25px 0px;
+        }
+
+    /* --- Jumbotron --- */
+
+    /* --- Category Start Here --- */
+
+        .Category {
+            padding: 35px 0px;
+            background-color: var(--Theme-Secondry-color);
+            text-align: center;
+            background-attachment: fixed;
+        }
+        .Category-Wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap: 15px;
+            padding: 35px 0px 15px 0px;
+        }
+        .Category-Outter .Section-Tittle {
+            color: var(--White);
+            display: inline-block;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--White);
+        }
+        .Category-item {
+            text-align: center;
+            color: var(--White);
+            padding: 10px;
+        }
+        .Category-tittle {
+            text-transform: capitalize;
+            font-size: 24px;
+            margin: 10px;
+        }
+        .Category-item .icon {
+            font-size: 28px;
+        }
+        .Category-item h3 {
+            font-family: 'Poppins-Regular';
+        }
+        
+    /* --- Category End Here --- */
+
+    /* About Section Start Here */
+
+        .About {
+            padding: 20px 15px;
+        }
+        .About-Banner {
+            display: flex;
+            justify-content: center;
+        }
+        .About-Banner img {
+            width: 100%;
+        }
+        .About-Content {
+            text-align: center;
+        }
+        .About-Discription {
+            line-height: 24px;
+            margin: 10px auto 20px auto;
+        }
+        .About-Content .Theme-Btn {
+            padding: 10px 30px;
+        }
+
+    /* About Section Start Here */
+
+    /* Work Section Start Here */
+
+        .Work {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px 10px;
+        }
+        .Work-Card-Wrapper {
+            padding-top: 25px;
+        }
+        .Work-Card {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 25px;
+            margin-bottom: 25px;
+            cursor: pointer;
+        }
+        .Work-Card-Tittle {
+            font-size: 20px;
+            font-family: 'Poppins-Bold';
+            text-transform: capitalize;
+        }
+        .Theme-Text {
+            color: var(--Btn_BG);
+            font-family: "Poppins-Bold";
+        }
+        .Work-Card-icon-outer img {
+            width: 100%;
+        }
+        .Work-Card-icon-outer {
+            width: 80px;
+            height: auto;
+            padding: 20px;
+            display: inline-block;
+            background-color: var(--Theme-Primery-color);
+            border-radius: 50%;
+            cursor: pointer;
+        }        
+        .Work-Card:hover .Work-Card-icon-outer {
+            background-color: var(--Theme-Secondry-color);
+        }
+        
+    /* Work Section End Here */
+
+    /* Testimonial Start Here */
+        .Testimonial {
+            text-align: center;
+            padding: 25px 10px;
+        }
+        .Testimonial-Sldier{
+            padding: 40px 0px;
+        }
+        .Testimonial-Slide{
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.263);
+            padding: 25px 15px;
+        }
+        .Testimonial-Slide h3{
+            margin-bottom: 10px;
+        }
+    /* Testimonial End Here */
+
+    /* Footer Start Here */
+        footer {
+            background-color:var(--Theme-Primery-color);
+            padding-top: 40px;
+            color: white;
+        }
+        footer a {
+            color: var(--White);
+            transition: all 0.1s;
+        }
+        footer a:hover {
+            color: var(--Theme-Secondry-color);
+        }
+        .Footer-logo {
+            width: 60%;
+        }
+        .Footer-nav, .Footer-Social-Media {
+            display: flex;
+            justify-content: space-between;
+        } 
+        .Footer-nav {
+            padding: 15px 0px;
+        }
+        .Footer-Social-Media {
+            gap: 10px;
+        }
+        .Footer-Links-Wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+        .Footer-tittle {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .Copywrite {
+            background-color: var(--White);
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--Theme-Primery-color);
+        }
+        .other-link ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .newsletter input {
+            padding: 10px;
+        }
+        .newsletter input::placeholder {
+            text-transform: capitalize;
+        }
+        .newsletter .Theme-Btn {
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+    /* Footer End Here */
+
+
+
+    /***** ========================= Media quries Start Here =========================== *****/
+        @media screen and (min-width: 768px) {
+            .Container{
+                width: 90vw;
+                margin: 0px auto;
+            }
+
+            /* --- Hero Section Start --- */
+                header{
+                    background-position:  60%;
+                }
+                .Desktop-link, .Desktop-link ul{
+                    display: flex;
+                    align-items: top;
+                    gap: 15px;
+                }
+                .Hero_Slide{
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .Slide-img{
+                    margin-top: 0px;
+                }
+                .Slide-tittle{
+                    font-size: 40px;
+                }
+                .Slide-Discription{
+                    margin: 20px 0;
+                }
+            /* --- Hero Section End --- */
+               
+            /* -- Jumbotron Start --- */
+                .Jumbotron{
+                    flex-direction: row;
+                    justify-content: space-around;
+                    gap: 10px;
+                }
+                .Section-Tittle{
+                    font-size: 40px;
+                }
+                .Jumbotron-Discription{
+                    font-size: 14px;
+                    width: 50vw;
+                }
+            /* --- Jumbotron End --- */
+
+            /* --- Category Start ---- */
+                .Category{
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    
+                }
+                .Category-Wrapper{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    gap: 25px;
+                }
+                .Category-item{
+                    min-width: 180px;
+                }
+            /* --- Category End ---- */
+
+            /* --- About Section --- */
+                .About-Discription{
+                    width: 70vw;
+                    margin: 15px auto 20px auto;
+                }
+            /* --- About Section --- */
+
+            /* Work Section Start Here */
+                .Work{
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            /* Work Section End Here */
+
+            /* Testimonial */
+                .Testimonial-Slide{
+                    margin-top: 30px;
+                }
+                .Testimonial-Slide-Discription{
+                    width: 60vw;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            /* Testimonial */
+            
+            /* Footer */
+
+                .Footer-logo{
+                    width: 45%;
+                }
+                .copyright-break{
+                    display: none;
+                }
+                .Footer-Links-Wrapper{
+                    flex-direction: row;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                }
+                .Footer-Links-Wrapper > div {
+                    width: 30%;
+                } 
+
+            /* Footer */
+
+            
+        }
+
+        @media screen and (min-width: 1024px) {
+            .Container{
+                width: 80vw;
+            }
+
+            header{
+                background-position:  70%;
+            }
+            .Btn{
+                font-size: 16px;
+            }
+            .Jumbotron-Discription{
+                font-size: 16px;
+                width: 50vw;
+            }
+            .Category-Wrapper{
+                padding-top: 50px;
+            }
+            .Category-item{
+                min-width: 250px;
+            }
+            .Cate-tittle-Break{
+                display: none;
+            }
+
+            .Footer-logo{
+                width: 35%;
+            }
+          
+
+            .offices, .information {
+                width: 35%;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            .Jumbotron{
+                padding: 100px 0px;
+            }
+            .Slide-tittle-brak{
+                display: block;
+            }
+            .Jumbotron-Discription{
+                width: 45vw;
+            }
+            
+            .Category-item{
+                min-width: 350px;
+            }
+
+            /* --- About Section --- */
+                .About-Discription{
+                    width: 70vw;
+                    margin-bottom: 30px;
+                }
+                .Work-Banner{
+                    width: 40vw;
+                }
+            /* --- About Section --- */
+
+            /* Footer Start Here */
+                .Footer-Links-Wrapper{
+                    gap: 60px;
+                }
+                .Footer-Links-Wrapper{
+                    flex-wrap: nowrap;
+                }
+            /* Footer End Here */
+
+        }
+    /***** ========================= Media quries End Here =========================== *****/
+
+/* Page Layout Section's Css End Here  */
+
+/****** ================================ ***** Spring Template Css File End Here ***** =============================== ******/
